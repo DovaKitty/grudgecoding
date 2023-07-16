@@ -195,7 +195,7 @@
 
 /datum/mood_event/revenant_blight/add_effects()
 	description = span_umbra("Just give up, [pick("no one will miss you", "there is nothing you can do to help", "even a clown would be more useful than you", "does it even matter in the end?")]...")
-
+/*
 /datum/mood_event/plushjack
 	description = span_warning("I have butchered a plush recently.")
 	mood_change = -1
@@ -210,7 +210,7 @@
 	description = span_warning("IT BIT ME!! OW!")
 	mood_change = -3
 	timeout = 2 MINUTES
-
+*/
 //Cursed stuff below
 
 /datum/mood_event/emptypred
@@ -296,9 +296,10 @@
 	description = span_boldwarning("I hate when my shoes come untied!")
 	mood_change = -3
 	timeout = 1 MINUTES
-
+/*
 //Necklace
 
 /datum/mood_event/equipped_necklace/cursed_necklace
 	description = span_boldwarning("This necklace gives me a bad feeling...")
 	mood_change = -2
+*/
