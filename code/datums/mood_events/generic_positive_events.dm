@@ -144,7 +144,7 @@
 	description = span_nicegreen("Headpats are nice.")
 	mood_change = 1
 	timeout = 5 MINUTES
-
+/*
 /datum/mood_event/hugbox
 	description = span_nicegreen("I hugged a box of hugs recently...")
 	mood_change = list(-2, -1, 0, 1, 2)
@@ -159,7 +159,7 @@
 	description = span_nicegreen("I've played with plushes recently.")
 	mood_change = 3
 	timeout = 10 MINUTES
-
+*/
 /datum/mood_event/breakfast
 	description = span_nicegreen("Nothing like a hearty breakfast to start the day.")
 	mood_change = 2
@@ -225,7 +225,7 @@
 /datum/mood_event/cleared_stomach
 	description = span_nicegreen("Feels nice to get that out of the way!")
 	mood_change = 3
-
+/*
 // RINGS
 /datum/mood_event/equipped_ring
 	description = span_nicegreen("You feel like you have a new purpose in life with your newly equipped silver ring.")
@@ -268,3 +268,4 @@
 /datum/mood_event/equipped_necklace/wolf
 	description = span_nicegreen("The spirit of a wolf dwells within you.")
 	mood_change = 1
+*/
