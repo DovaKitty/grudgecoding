@@ -703,7 +703,7 @@ obj/item/storage/box/stingbangs
 	user.DelayNextAction(CLICK_CD_MELEE)
 	playsound(src, "rustle", 50, 1, -5)
 	user.visible_message(span_notice("[user] hugs \the [src]."),span_notice("You hug \the [src]."))
-	SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT,"hugbox", /datum/mood_event/hugbox)
+//	SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT,"hugbox", /datum/mood_event/hugbox)
 
 
 //////
