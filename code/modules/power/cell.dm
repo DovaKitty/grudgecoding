@@ -518,7 +518,6 @@
 	icon_state = "ecp-full"
 	maxcharge = 2400
 	w_class = WEIGHT_CLASS_SMALL
-	var/cancharge = 0
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
 	switch(charge)
