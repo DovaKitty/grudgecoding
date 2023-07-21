@@ -375,6 +375,12 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, EASY_CHECK))) //easy science check (35) can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, REGULAR_CHECK))) //regular science check (50) can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, EASY_CHECK)) && HAS_TRAIT(user,TRAIT_TECHNOPHREAK)) //easy science check (35) AND technophreak can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)
@@ -421,6 +427,12 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, EASY_CHECK))) //easy science check (35) can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, REGULAR_CHECK))) //regular science check (50) can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
+			if((prob(10)) && (user.skill_check(SKILL_SCIENCE, EASY_CHECK)) && HAS_TRAIT(user,TRAIT_TECHNOPHREAK)) //easy science check (35) AND technophreak can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)			
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)
