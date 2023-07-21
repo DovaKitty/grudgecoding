@@ -461,6 +461,7 @@
 	icon_state = "mfc-full"
 	maxcharge = 2000
 	w_class = WEIGHT_CLASS_SMALL
+	var/cancharge = 0
 
 /obj/item/stock_parts/cell/ammo/mfc/update_icon()
 	switch(charge)
@@ -478,6 +479,7 @@
 	icon = 'icons/fallout/objects/powercells.dmi'
 	icon_state = "ultracite"
 	maxcharge = 2000
+	var/cancharge = 0
 
 // Energy cell - small energy weapons
 /obj/item/stock_parts/cell/ammo/ec
@@ -516,6 +518,7 @@
 	icon_state = "ecp-full"
 	maxcharge = 2400
 	w_class = WEIGHT_CLASS_SMALL
+	var/cancharge = 0
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
 	switch(charge)
