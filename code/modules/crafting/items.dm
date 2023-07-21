@@ -309,8 +309,8 @@ GLOBAL_LIST_INIT(blueprint_fluff, list(
 	name = "Pre-war battery salvage"
 	desc = "A pile of pre-war batteries. It could reveal some that have retained their charge if dissasembled using a workbench..."
 	icon_state = "cellsalvage"
-	Loot = list(/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/stock_parts/cell/ammo/ec,
+	Loot = list(/obj/item/stock_parts/cell/ammo/mfc = 2,
+				/obj/item/stock_parts/cell/ammo/ec = 2,
 				/obj/item/stock_parts/cell/ammo/ecp)
 
 /obj/item/pa_kit
