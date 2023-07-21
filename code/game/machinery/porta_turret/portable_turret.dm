@@ -537,8 +537,12 @@
 				new /obj/item/salvage/low(right_here)
 			if(4 to 6)
 				new /obj/item/salvage/tool(right_here)
+				if((user.skill_check(SKILL_SCIENCE, EASY_CHECK))
+					new /obj/item/salvage/cell
 			if(7 to 10)
 				new /obj/item/salvage/high(right_here)
+				if((user.skill_check(SKILL_SCIENCE, EASY_CHECK))
+					new /obj/item/salvage/cell
 	dropped_loot = TRUE
 
 /obj/machinery/porta_turret/proc/reset_attacked()
