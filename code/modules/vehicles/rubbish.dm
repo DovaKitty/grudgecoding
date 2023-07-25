@@ -65,6 +65,10 @@
 	for(var/i3 in 1 to (1+modifier)) //this is just less lines for the same thing
 		if(prob(6))
 			new /obj/item/salvage/high(usr_turf)
+			if((user.skill_check(SKILL_SCIENCE, EASY_CHECK))) //regular science check (50) can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
+			if((user.skill_check(SKILL_SCIENCE, EASY_CHECK)) && HAS_TRAIT(user,TRAIT_TECHNOPHREAK)) //easy science check (35) AND technophreak can spawn batteries. Can stack.
+				new /obj/item/salvage/cell(usr_turf)
 	uses_left--
 	inuse = FALSE //putting this after the -- because the first check prevents cheesing
 	if(uses_left <= 0) //I prefer to put any qdel stuff at the very end, with src being the very last thing
