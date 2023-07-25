@@ -689,7 +689,7 @@
 	build_path = /obj/item/implantcase/mindshield
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
+/*
 /datum/design/mfc
 	name = "Microfusion Cell"
 	id = "mfc"
@@ -698,7 +698,7 @@
 	build_path =/obj/item/stock_parts/cell/ammo/mfc
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
+*/
 /datum/design/ec
 	name = "Energy Cell"
 	id = "ec"
