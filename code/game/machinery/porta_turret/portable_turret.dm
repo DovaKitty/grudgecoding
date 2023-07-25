@@ -524,6 +524,7 @@
 	new /obj/item/stack/crafting/goodparts(right_here, rand(1,2))
 	new /obj/item/stack/crafting/electronicparts(right_here, rand(4,6))
 	new /obj/item/stack/cable_coil(right_here, rand(15,20))
+	new /obj/item/salvage/cell(right_here, rand(1,2))
 	if(prob(80))
 		new /obj/item/assembly/prox_sensor(right_here)
 	if(prob(80))
@@ -538,11 +539,11 @@
 			if(4 to 6)
 				new /obj/item/salvage/tool(right_here)
 				if((user.skill_check(SKILL_SCIENCE, EASY_CHECK)))
-					new /obj/item/salvage/cell
+					new /obj/item/salvage/cell(right_here)
 			if(7 to 10)
 				new /obj/item/salvage/high(right_here)
 				if((user.skill_check(SKILL_SCIENCE, EASY_CHECK)))
-					new /obj/item/salvage/cell
+					new /obj/item/salvage/cell(right_here)
 	dropped_loot = TRUE
 
 /obj/machinery/porta_turret/proc/reset_attacked()
