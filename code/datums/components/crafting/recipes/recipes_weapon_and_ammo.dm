@@ -126,27 +126,30 @@
 	result = /obj/item/stock_parts/cell/ammo/ec
 	reqs = list(/obj/item/stock_parts/cell/ammo/ec=2)
 	tools = list(TOOL_WORKBENCH)
-	time = 10
+	skill_needed = SKILL_SCIENCE
+	time = 5
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
-	skill_level = HARD_CHECK
+	skill_level = EASY_CHECK
 
 /datum/crafting_recipe/mfcrecharge
 	name = "Microfusion Cell (recycle)"
 	result = /obj/item/stock_parts/cell/ammo/mfc
 	reqs = list(/obj/item/stock_parts/cell/ammo/mfc=2)
 	tools = list(TOOL_WORKBENCH)
-	time = 10
+	skill_needed = SKILL_SCIENCE
+	time = 5
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
-	skill_level = HARD_CHECK
+	skill_level = REGULAR_CHECK
 
 /datum/crafting_recipe/ecprecharge
 	name = "Electron Charge Pack (recycle)"
 	result = /obj/item/stock_parts/cell/ammo/ecp
 	reqs = list(/obj/item/stock_parts/cell/ammo/ecp=2)
 	tools = list(TOOL_WORKBENCH)
-	time = 10
+	skill_needed = SKILL_SCIENCE
+	time = 5
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 	skill_level = HARD_CHECK
