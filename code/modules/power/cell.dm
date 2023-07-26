@@ -488,7 +488,7 @@
 	icon = 'icons/fallout/objects/powercells.dmi'
 	icon_state = "ec-full"
 	maxcharge = 1500
-	
+	cancharge = 0
 
 // Microfusion breeder? Okay, sure.
 /obj/item/stock_parts/cell/ammo/breeder
@@ -517,6 +517,7 @@
 	icon = 'icons/fallout/objects/powercells.dmi'
 	icon_state = "ecp-full"
 	maxcharge = 2400
+	cancharge = 0
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/stock_parts/cell/ammo/ecp/update_icon()
