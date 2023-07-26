@@ -698,7 +698,7 @@
 	build_path =/obj/item/stock_parts/cell/ammo/mfc
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-*/
+
 /datum/design/ec
 	name = "Energy Cell"
 	id = "ec"
@@ -716,7 +716,7 @@
 	build_path = /obj/item/stock_parts/cell/ammo/ecp
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
+*/
 //weapon parts
 /*
 /datum/design/fluxcap
