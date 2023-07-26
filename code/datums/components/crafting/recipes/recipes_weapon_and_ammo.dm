@@ -121,6 +121,88 @@
 ///POWER CELLS//
 ///////////////
 
+/datum/crafting_recipe/ec
+	name = "Small Energy Cell"
+	result = /obj/item/stock_parts/cell/ammo/ec
+	reqs = list(/obj/item/stock_parts/cell = 2,
+				/obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/cable_coil = 3)
+	tools = list(TOOL_WORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 5
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = EASY_CHECK
+
+/datum/crafting_recipe/ecx10
+	name = "Small Energy Cell (x10)"
+	result = /obj/item/stock_parts/cell/ammo/ec=10
+	reqs = list(/obj/item/stock_parts/cell = 20,
+				/obj/item/stack/crafting/electronicparts = 20,
+				/obj/item/stack/cable_coil = 30)
+	tools = list(TOOL_WORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 15
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = EASY_CHECK
+
+/datum/crafting_recipe/mfc
+	name = "Microfusion Cell"
+	result = /obj/item/stock_parts/cell/ammo/mfc
+	reqs = list(/obj/item/stock_parts/cell/ammo/ec = 2,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/cable_coil = 3)
+	tools = list(TOOL_AWORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 5
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = HARD_CHECK
+
+/datum/crafting_recipe/mfcx10
+	name = "Microfusion Cell (x10)"
+	result = /obj/item/stock_parts/cell/ammo/mfc=10
+	reqs = list(/obj/item/stock_parts/cell/ammo/ec = 20,
+				/obj/item/stack/crafting/goodparts = 20,
+				/obj/item/stack/crafting/electronicparts = 20,
+				/obj/item/stack/cable_coil = 30)
+	tools = list(TOOL_AWORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 15
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = HARD_CHECK
+
+/datum/crafting_recipe/ecp
+	name = "Electron Charge Pack"
+	result = /obj/item/stock_parts/cell/ammo/ecp
+	reqs = list(/obj/item/stock_parts/cell/ammo/ec = 2,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/cable_coil = 3)
+	tools = list(TOOL_AWORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 5
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = REGULAR_CHECK
+
+/datum/crafting_recipe/ecpx10
+	name = "Electron Charge Pack (x10)"
+	result = /obj/item/stock_parts/cell/ammo/ecp=10
+	reqs = list(/obj/item/stock_parts/cell/ammo/ec = 20,
+				/obj/item/stack/crafting/metalparts = 20,
+				/obj/item/stack/crafting/electronicparts = 20,
+				/obj/item/stack/cable_coil = 30)
+	tools = list(TOOL_AWORKBENCH)
+	skill_needed = SKILL_SCIENCE
+	time = 15
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+	skill_level = REGULAR_CHECK
+
 /datum/crafting_recipe/ecrecharge
 	name = "Small Energy Cell (recycle)"
 	result = /obj/item/stock_parts/cell/ammo/ec
@@ -141,7 +223,7 @@
 	time = 5
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
-	skill_level = REGULAR_CHECK
+	skill_level = HARD_CHECK
 
 /datum/crafting_recipe/ecprecharge
 	name = "Electron Charge Pack (recycle)"
@@ -152,7 +234,7 @@
 	time = 5
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
-	skill_level = HARD_CHECK
+	skill_level = REGULAR_CHECK
 
 /datum/crafting_recipe/batterybox //lasmusket ammo
 	name = "Laser Musket battery pack"
